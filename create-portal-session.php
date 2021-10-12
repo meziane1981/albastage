@@ -1,12 +1,12 @@
 <?php
 
-require 'vendor/autoload.php';
+require './vendor/autoload.php';
 // This is your real test secret API key.
 \Stripe\Stripe::setApiKey('sk_test_51JfONNAEcI2cqmHuyph6DhVKT6VBpJBNAwtAieqbryfkzFPFtYHL7Pf7OV4jpFvsxAJXVU6ZiW1qrZdWKJbyvlWn0001OOQhXu');
 
 header('Content-Type: application/json');
 
-$YOUR_DOMAIN = 'http://localhost:8080/public/success.html';
+$YOUR_DOMAIN = 'http://localhost:8080/ghitub/albastage/';
 
 try {
   $checkout_session = \Stripe\Checkout\Session::retrieve($_POST['session_id']);

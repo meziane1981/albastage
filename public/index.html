@@ -24,6 +24,8 @@
             d.getElementsByTagName("head")[0].appendChild(s);
         })();
     </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+    <script src="https://js.stripe.com/v3/"></script>
 </head>
 
 <body>
@@ -238,8 +240,8 @@
                                 <li class="item"> Adresse IP partagée </li>
                             </ul>
                         </div>
-                        <form action="/create-checkout-session.php" method="POST">
-                            <input type="hidden" name="lookup_key" value="price_1Jj8oDAEcI2cqmHu9dGsYsYV" />
+                        <form action="../create-checkout-session.php" method="POST">
+                            <input type="hidden" name="lookup_key" value="test" />
                             <button class="btn btn-primary btn-block btn-plan" id="checkout-and-portal-button" type="submit">30 jours d'essai gratuit</button>
                         </form>
                     </div>
@@ -263,8 +265,8 @@
                                 <li class="item"> Adresse IP dédiée </li>
                             </ul>
                         </div>
-                        <form action="/create-checkout-session.php" method="POST">
-                            <input type="hidden" name="lookup_key" value="price_1Jj8oDAEcI2cqmHu9dGsYsYV" />
+                        <form action="../create-checkout-session.php" method="POST">
+                            <input type="hidden" name="lookup_key" value="test" />
                             <button class="btn btn-primary btn-block btn-plan" id="checkout-and-portal-button" type="submit">30 jours d'essai gratuit</button>
                         </form>
                     </div>
@@ -520,6 +522,7 @@
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="./js/jquery.hover3d.min.js"></script>
     <script src="./js/main.js"></script>
+
 </body>
 
 </html>
