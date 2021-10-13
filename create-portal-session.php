@@ -6,7 +6,7 @@ require './vendor/autoload.php';
 
 header('Content-Type: application/json');
 
-$YOUR_DOMAIN = 'http://localhost:8080/ghitub/albastage/';
+$YOUR_DOMAIN = 'http://localhost:8080/ghitub/albastage/public';
 
 try {
   $checkout_session = \Stripe\Checkout\Session::retrieve($_POST['session_id']);
